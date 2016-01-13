@@ -1,0 +1,326 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.6;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+	color: #7f7f7f;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+a {
+	color: #4a4a4a;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0;
+}
+
+h4 {
+	margin-bottom: .4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #e0ab26;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+}
+
+li,
+ol,
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+figcaption {
+	color: #4a4a4a;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.portfolio img {
+	border-radius: 5px;
+	border: 3px solid #ccc;
+}
+
+	.name a,
+	.main-nav a {
+		display: block;
+		text-align: center;
+		padding: 10px 15px;
+	}
+	
+	.main-nav a {
+		font-size: .0.875em; /* 14px */
+		text-transform: uppercase;
+	}
+
+	.main-nav a:hover {
+		color: #e0ab26;
+	}
+
+.back-top {
+	text-transform: uppercase;
+	float: right;
+}
+
+/* ---- Layout Containers ---- */
+
+body {
+	background-color: #fafafa;
+}
+
+.main-header li {
+	background-color: #fafafa;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	width: 90%;
+	border-top: 1px solid #e7e7e7;
+}
+.footer-nav {
+	width: 100%;
+	clear: both;
+	float: left;
+}
+	.footer-menu {
+		float: right;
+	}
+	.footer-menu li {
+		display: inline-block;
+		margin: 15px 0 0 10px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+.prtf-item h3{
+	text-align: center;
+}
+.stu-name {
+	float: left;
+}
+.contact-list {
+	text-align: center;
+}
+.prtf-item figure {
+	margin-bottom: 60px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (max-width: 768px) {
+	h2 {
+		font-size: 0.875em;
+		text-align: center;
+	}
+	.container {
+		padding: 0.875em;
+	}
+	.main-banner {
+		margin-top: 2.625em;
+	}
+	.main-header li {
+		background-color: #fff;
+		margin-bottom: 0.375em;
+	}
+	.main-nav a {
+		/*font-size: 0.583em;*/
+	}
+	.main-banner {
+		margin-bottom: 3.4375em;
+	}
+	.main-banner img {
+		padding: 0 15%;
+	}
+	.main-banner figcaption {
+		color: #7f7f7f;
+		text-align: center;
+	}
+}
+
+@media (min-width: 769px) {
+	.top-menu {
+		padding-top: 30px;
+	}
+	h1.name {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 14px;
+		text-align: center;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	.container h2:first-child {
+		margin-top: 50px;
+	}
+	.col {
+		width: 50%;
+		float: left;
+	}
+	.main-header {
+		width: 100%;
+	}
+		.main-banner img {
+			float: right;
+			padding: 0 0 40px 0;
+		}
+		.main-banner figcaption {
+			color: #7f7f7f;
+			font-size: 20px;
+		}
+		.main-nav {
+			text-align: center;
+		}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.primary,
+	.secondary {
+		width: 50%;
+	}
+
+	.main-nav {
+		margin-bottom: 50px;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	.tagline {
+		font-size: 1.4em;
+	}
+	.contact-description {
+		text-align: center;
+	    max-width: 530px;
+	    margin: 0 auto;
+	}
+	.contact h2 {
+		padding-bottom: 0;
+	}
+	.back-top {
+		display: none;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	h2 {
+		padding-bottom: 60px;
+	}
+	.name {
+		float: left;
+	}
+	.col {
+		width: 33%;
+	}
+
+	.main-nav {
+		float: right;
+		text-align: center;
+	}
+
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+	.main-banner figcaption {
+		padding-top: 60px;
+	}
+
+}
